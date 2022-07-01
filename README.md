@@ -28,6 +28,54 @@ Using the map() method to display all the cars from the data array.
 
 Add a new file, and name it `data.js`.
 
+If the contents of the `data.js` file looks like this:
+```js
+export default [
+  {
+    make: "BMW",
+    color: "blue",
+    year: 2011,
+    imgUrl: "https://www.codingexercises.com/img/2022-01-25/001-bmw-blue.jpg",
+  },
+  {
+    make: "Mercedes",
+    color: "gray",
+    year: 2018,
+    imgUrl: "https://www.codingexercises.com/img/2022-01-25/002-mercedes-gray.jpg",
+  },
+  {
+    make: "Toyota",
+    color: "gray",
+    year: "new",
+    imgUrl: "https://www.codingexercises.com/img/2022-01-25/003-toyota-gray.jpg",
+  },
+  {
+    make: "Alfa Romeo",
+    color: "red",
+    year: 2012,
+    imgUrl: "https://www.codingexercises.com/img/2022-01-25/004-alpha-romeo-red.jpg",
+  },
+];
+```
+
+... you could import it like this in `App.js`:
+```
+import data from './data';
+```
+
+However, you'd be getting a warning that reads:
+```
+Assign array to a variable before exporting as module default import/no-anonymous-default-export
+```
+
+So instead, you can fix it like this:
+```js
+const data = [
+    ...
+]
+export default data
+```
+
 #### (4) Move the data to an online JSON file and fetch it from there
 
 #### (5) Answer: What would we do if we had 100 cars?
