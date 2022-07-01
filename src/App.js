@@ -33,12 +33,7 @@ function App() {
   return (
     <div className="cars">
       <h1>My favorite cars</h1>
-      <Car
-        make={data[0].make}
-        color={data[0].color}
-        year={data[0].year}
-        carImgSrc={data[0].imgUrl}
-      />
+      {data.map(car => <Car make={car.make} color={car.color} year={car.year} carImgSrc={car.imgUrl} /> )}
     </div>
   );
 }

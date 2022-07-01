@@ -22,6 +22,8 @@ Additionally, I'm updating the Car JSX element in App.js so that it shows the fi
 
 #### (2) Use the map method to map a component over each item in the data array
 
+Using the map() method to display all the cars from the data array.
+
 #### (3) Move the data to a separate file and import it into App.js
 
 Add a new file, and name it `data.js`.
