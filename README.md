@@ -18,6 +18,8 @@ Set up the shell of the README and the starter code that allows us to follow alo
 
 Move all the hard-coded data from props in App.js to an array of objects in `data.js`.
 
+Additionally, I'm updating the Car JSX element in App.js so that it shows the first object in the array of objects.
+
 #### (2) Use the map method to map a component over each item in the data array
 
 #### (3) Move the data to a separate file and import it into App.js
