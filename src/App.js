@@ -1,20 +1,30 @@
-import Car from './Car';
-import './App.css';
-// import data from './data';
-import data from './data2.json';
+import React, { useEffect } from "react";
+import Car from "./Car";
+import "./App.css";
 
 function App() {
+  const [carsData, setCarsData] = React.useState([]);
+
+  const getCarsData = () => {
+    fetch("https://codingexercises.com/cars2.json")
+      .then((response) => response.json())
+      .then((data) => setCarsData(data))
+  };
+
+  useEffect(() => {
+    getCarsData();
+  }, []);
 
   return (
-    <div className="cars">
-      <h1>My favorite cars</h1>
-      {data.map(car => (
+    <div>
+      {carsData.map((car) => (
         <Car
-          key={Math.floor((Math.random() * 10000) +1)}
+          key={Math.floor(Math.random() * 10000 + 1)}
           make={car.make}
           color={car.color}
           year={car.year}
-          carImgSrc={car.imgUrl} />
+          carImgSrc={car.imgUrl}
+        />
       ))}
     </div>
   );

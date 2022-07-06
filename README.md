@@ -140,9 +140,9 @@ function App() {
 }
 ```
 
-
-
 #### (4) Move the data to an online JSON file and fetch it from there
+
+To move the data to an online JSON file and fetch it from there, we'll need to understand a few more concepts, so this is something that will be done a bit later. For now, here's a non-explained update to my app that does just that. If you inspect the updated code, you will likely find several confusing things, which will be explained in upcoming lessons.
 
 #### (5) Answer: What would we do if we had 100 cars?
 
