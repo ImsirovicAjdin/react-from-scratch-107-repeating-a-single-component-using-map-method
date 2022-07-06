@@ -2,7 +2,7 @@
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-This project is [deployed on Netlify]().
+This project is [deployed on Netlify](https://subtle-nougat-8bdf06.netlify.app/).
 
 ## Learning Concepts covered
 
